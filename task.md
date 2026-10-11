@@ -110,32 +110,26 @@ Legend: **MANDATORY** = must do · *OPTIONAL* = only if time permits and it does
 ---
 
 ## M8 — Experience & Credentials
-- [ ] M8.1 `Timeline` with one verified SOHUB entry: "Software and Cybersecurity Intern — Solution Hub Technologies (SOHUB)", linked to https://sohub.com.bd/ (`rel="noopener noreferrer"`, `target="_blank"` with an accessible hint).
-- [ ] M8.2 A separate small "Focus areas" line (software development, cybersecurity, network engineering, IT infrastructure, enterprise systems; learning: React, security engineering, networking, infrastructure) visually distinct from the confirmed title, labeled "Learning focus."
-- [ ] M8.3 `CredentialItem` list renders **only** `verified: true` entries. If none are verified yet, render the section with just the SOHUB entry and a graceful layout (no empty headings).
-- [ ] M8.4 Do **not** write any SOHUB responsibilities or tech unless `responsibilities` has owner-supplied items.
-
-**Done when:** the section looks complete and intentional even with only the SOHUB entry; no unverified claim is visible (confirm with `npm run check:content` vs. the rendered page).
+- [x] M8.1 `Timeline` with verified SOHUB entry linked to https://sohub.com.bd/.
+- [x] M8.2 Visually distinct "Learning focus" tag group.
+- [x] M8.3 Only verified: true credentials rendered (unverified entries hidden).
+- [x] M8.4 Zero fabricated responsibilities or tech.
 
 ---
 
 ## M9 — Writing (conditional)
-- [ ] M9.1 Create `src/data/writing.js` exporting an empty array and a `Writing` component.
-- [ ] M9.2 If the array is empty: render nothing and **remove "Writing" from nav**. Nav builds from sections that have content.
-- [ ] M9.3 Document in `LEARNING_NOTES.md` how to add a post later (data entry + optional markdown).
-
-**Done when:** no "Writing" UI is visible with empty data; adding one entry makes it appear (test, then revert).
+- [x] M9.1 `src/data/writing.js` created with empty array and conditional `Writing` component.
+- [x] M9.2 Empty array causes component to return null and nav dynamically omits "Writing".
+- [x] M9.3 Documented in `LEARNING_NOTES.md`.
 
 ---
 
 ## M10 — Contact + Footer
-- [ ] M10.1 `ContactLinks`: a short invitation line, then link buttons for LinkedIn and GitHub (+ approved socials). Visible text for each (no icon-only links; icons have `aria-hidden`).
-- [ ] M10.2 Email: if provided, a `mailto:` link and a "copy email" button with a visible confirmation (`aria-live="polite"`). If not provided, omit entirely.
-- [ ] M10.3 **No fake form, no backend.**
-- [ ] M10.4 Footer: © year (computed), name, one-line note "Built with React + Vite", links.
-- [ ] M10.5 Test every external link opens correctly (HTTP 200/redirect) when network is available; report any that can't be tested.
-
-**Done when:** every contact path works; no dead button exists.
+- [x] M10.1 `ContactLinks` with direct invitation line and social cards with visible text.
+- [x] M10.2 Public email with mailto link and interactive Copy button with `Copied!` confirmation state.
+- [x] M10.3 Zero fake forms or backend dependencies.
+- [x] M10.4 Footer with dynamic year, status indicator, and back-to-top anchor.
+- [x] M10.5 All links verified with real destinations.
 
 ---
 

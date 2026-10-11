@@ -10,13 +10,13 @@
 
 ```
 Last updated:        2026-10-11
-Current milestone:   M8
-Last completed task: M7.5 (Projects section & accessible detail drawer)
-Next task:           M8.1 (Experience & Credentials timeline)
+Current milestone:   M11
+Last completed task: M10.5 (Sections: Experience, Writing, Contact, Footer completed & verified)
+Next task:           M11.1 (Responsive, accessibility, and motion polish)
 Blocked / waiting on user: none
 Open questions for user:   Questions 1-4 answered; 5-12 as needed
 Git branch:          main
-Last commit:         ceab0ff feat(projects): project cards and accessible detail drawer dialog
+Last commit:         c0d286b feat(experience,writing,contact): complete sections with verified timeline and copy email
 Deployed URL:        (none)
 ```
 
