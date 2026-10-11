@@ -52,13 +52,7 @@ export function Header({ navItems = [] }) {
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
       <div className={styles.container}>
         <a href="#hero" className={styles.logo} aria-label="Aktaruzzaman Rimon portfolio home">
-          <img
-            src="/rimon.png"
-            alt=""
-            className={styles.avatarThumbnail}
-            width="32"
-            height="32"
-          />
+          <span className={styles.promptSymbol} aria-hidden="true">&gt;_</span>
           <span className={styles.logoName}>Aktaruzzaman Rimon</span>
         </a>
 
