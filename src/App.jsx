@@ -1,12 +1,13 @@
 import { useState } from 'react'
 import { Header } from './components/layout/Header'
 import { Hero } from './components/hero/Hero'
+import { Atlas } from './components/atlas/Atlas'
 import { About } from './components/about/About'
 import { Section } from './components/layout/Section'
 import { Footer } from './components/layout/Footer'
 
 function App() {
-  const [_selectedNodeId, setSelectedNodeId] = useState('webapp-sec')
+  const [selectedNodeId, setSelectedNodeId] = useState('webapp-sec')
 
   return (
     <>
@@ -19,9 +20,10 @@ function App() {
       <main id="main-content">
         <Hero onSelectNode={setSelectedNodeId} />
 
-        <Section id="atlas" eyebrow="Interactive Topology" title="The Atlas">
-          <p>A connected map of disciplines, tools, and learning projects.</p>
-        </Section>
+        <Atlas
+          selectedNodeId={selectedNodeId}
+          onSelectNode={setSelectedNodeId}
+        />
 
         <About />
 

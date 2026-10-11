@@ -10,13 +10,13 @@
 
 ```
 Last updated:        2026-10-11
-Current milestone:   M5
-Last completed task: M4.8 (Hero + signature interactive topology canvas)
-Next task:           M5.1 (About section)
+Current milestone:   M6
+Last completed task: M5.4 (About section with avatar switcher and principles)
+Next task:           M6.1 (The Atlas: capabilities visualization & node detail)
 Blocked / waiting on user: none
 Open questions for user:   Questions 1-4 answered; 5-12 as needed
 Git branch:          main
-Last commit:         0bbdf5f feat(hero): hero section and interactive topology canvas
+Last commit:         946f875 feat(about): about section with dual avatar switcher and learning principles
 Deployed URL:        (none)
 ```
 

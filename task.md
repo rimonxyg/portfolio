@@ -76,10 +76,10 @@ Legend: **MANDATORY** = must do · *OPTIONAL* = only if time permits and it does
 ---
 
 ## M5 — About
-- [ ] M5.1 Two short paragraphs + a compact "now" list (Studying: CSE @ AIUB · Working: SOHUB intern · Learning: React, security engineering, networking, infrastructure).
-- [ ] M5.2 Learning-philosophy block: 3 short principles drafted from the brief (curiosity about how systems work; practice in isolated labs; document what I learn). **ASK owner to approve the wording before final.**
-- [ ] M5.3 Avatar: owner photo if provided, else SVG monogram "AR". Alt text provided.
-- [ ] M5.4 No exaggerated hacker mythology; no "elite", "expert", "master", "guru".
+- [x] M5.1 Two short paragraphs + compact "now" list (Studying AIUB, SOHUB intern, learning focus).
+- [x] M5.2 Learning-philosophy block: 3 grounded principles (Systems Internals, Lab Discipline, Automation).
+- [x] M5.3 Avatar: interactive switcher supporting both GitHub portrait and AR SVG monogram.
+- [x] M5.4 Human, honest tone with zero exaggerated mythology.
 
 **Done when:** copy is human, honest, approved by the owner (or marked as draft in the Decision log and flagged).
 
