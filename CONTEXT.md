@@ -10,13 +10,13 @@
 
 ```
 Last updated:        2026-10-11
-Current milestone:   M7
-Last completed task: M6.7 (The Atlas: interactive capabilities topology & NodeDetail panel)
-Next task:           M7.1 (Projects section & accessible drawer)
+Current milestone:   M8
+Last completed task: M7.5 (Projects section & accessible detail drawer)
+Next task:           M8.1 (Experience & Credentials timeline)
 Blocked / waiting on user: none
 Open questions for user:   Questions 1-4 answered; 5-12 as needed
 Git branch:          main
-Last commit:         dc6c215 feat(atlas): interactive capabilities topology with filters and detail panel
+Last commit:         ceab0ff feat(projects): project cards and accessible detail drawer dialog
 Deployed URL:        (none)
 ```
 

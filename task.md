@@ -99,11 +99,11 @@ Legend: **MANDATORY** = must do · *OPTIONAL* = only if time permits and it does
 ---
 
 ## M7 — Projects
-- [ ] M7.1 `ProjectCard`: title, `StatusBadge` (Concept / In progress / Shipped / Learning), 1–2 line summary, tools as `Tag`s. Whole card is one button that opens the drawer.
-- [ ] M7.2 `ProjectDrawer` (accessible dialog): focus trap, Esc closes, returns focus to the trigger, `aria-modal`, `role="dialog"`, `aria-labelledby`, body scroll locked while open. Sections: Problem · Objective · Approach · Tools · My contribution · Outcome · Links. **Omit any section whose data is null.**
-- [ ] M7.3 Show only projects with `verified: true`. Add a clear note in the data file about the status label.
-- [ ] M7.4 Links: only real URLs the owner supplied. If none, show no link (no `#` placeholders).
-- [ ] M7.5 Optional *OPTIONAL*: subtle card hover (border brightens, 2px lift) via CSS only.
+- [x] M7.1 `ProjectCard`: title, StatusBadge, summary, tags, CSS-only hover lift.
+- [x] M7.2 `ProjectDrawer`: accessible dialog with escape key, focus handling, null-omission sections.
+- [x] M7.3 Only verified: true projects rendered with truthful labeling.
+- [x] M7.4 Real URLs only (no placeholder # links).
+- [x] M7.5 CSS-only card hover and focus rings.
 
 **Done when:** each shown project opens/closes properly via mouse and keyboard; focus management verified manually; there are no placeholder links.
 

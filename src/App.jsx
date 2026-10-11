@@ -4,12 +4,25 @@ import { Hero } from './components/hero/Hero'
 import { Atlas } from './components/atlas/Atlas'
 import { About } from './components/about/About'
 import { Projects } from './components/projects/Projects'
-import { Section } from './components/layout/Section'
+import { Experience } from './components/experience/Experience'
+import { Writing } from './components/writing/Writing'
+import { ContactLinks } from './components/contact/ContactLinks'
 import { Footer } from './components/layout/Footer'
+import { articles } from './data/writing'
 
 function App() {
   const [selectedNodeId, setSelectedNodeId] = useState('webapp-sec')
   const [activeProjectId, setActiveProjectId] = useState(null)
+
+  // Build nav dynamically: omit Writing if empty
+  const navItems = [
+    { label: 'Atlas', href: '#atlas' },
+    { label: 'About', href: '#about' },
+    { label: 'Projects', href: '#projects' },
+    { label: 'Experience', href: '#experience' },
+    ...(articles && articles.length > 0 ? [{ label: 'Writing', href: '#writing' }] : []),
+    { label: 'Contact', href: '#contact' },
+  ]
 
   return (
     <>
@@ -17,7 +30,7 @@ function App() {
         Skip to main content
       </a>
 
-      <Header />
+      <Header navItems={navItems} />
 
       <main id="main-content">
         <Hero onSelectNode={setSelectedNodeId} />
@@ -35,13 +48,11 @@ function App() {
           onSelectProject={setActiveProjectId}
         />
 
-        <Section id="experience" eyebrow="Professional" title="Experience & Credentials">
-          <p>Internship and verified coursework.</p>
-        </Section>
+        <Experience />
 
-        <Section id="contact" eyebrow="Get in Touch" title="Contact">
-          <p>Reach out for collaborations, discussions, or opportunities.</p>
-        </Section>
+        <Writing />
+
+        <ContactLinks />
       </main>
 
       <Footer />

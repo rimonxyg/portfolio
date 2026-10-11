@@ -1,0 +1,152 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  max-width: 820px;
+}
+
+.emailCard {
+  background: var(--surface);
+  border: 1px solid var(--line-bright);
+  border-radius: var(--radius-sm);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  box-shadow: var(--shadow-sm);
+}
+
+@media (min-width: 640px) {
+  .emailCard {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.emailInfo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.emailLabel {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--accent);
+  letter-spacing: 0.08em;
+}
+
+.emailAddress {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-xl);
+  font-weight: 600;
+  color: var(--text);
+  transition: color var(--dur-fast) var(--ease);
+}
+
+.emailAddress:hover {
+  color: var(--accent);
+}
+
+.mailIcon {
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.emailActions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.copyBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: 10px 16px;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--text);
+  transition: all var(--dur-fast) var(--ease);
+}
+
+.copyBtn:hover {
+  background: var(--surface-hover);
+  border-color: var(--line-bright);
+}
+
+.checkIcon {
+  color: var(--status-shipped);
+}
+
+/* Social Grid */
+.socialsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+}
+
+@media (min-width: 640px) {
+  .socialsGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.socialCard {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  transition: all var(--dur-fast) var(--ease);
+}
+
+.socialCard:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  background: var(--surface-hover);
+}
+
+.socialHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.iconWrapper {
+  color: var(--text);
+}
+
+.socialCard:hover .iconWrapper {
+  color: var(--accent);
+}
+
+.externalIcon {
+  color: var(--text-muted);
+  transition: all var(--dur-fast) var(--ease);
+}
+
+.socialCard:hover .externalIcon {
+  color: var(--accent);
+  transform: translate(2px, -2px);
+}
+
+.socialLabel {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--text);
+}
+
+.socialHandle {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+}
