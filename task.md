@@ -86,13 +86,13 @@ Legend: **MANDATORY** = must do · *OPTIONAL* = only if time permits and it does
 ---
 
 ## M6 — Atlas (capabilities visualization) — the meaningful interactive section
-- [ ] M6.1 `Atlas` renders the full graph from `capabilities.js` as SVG, clustered by group (Security / Networking / Software / Labs / Projects), with hairline edges.
-- [ ] M6.2 `NodeDetail` panel (right on desktop, below on mobile): label, level badge (Foundation / Practicing / Demonstrated), blurb, related projects (click opens the project drawer, M7), connected nodes (click to jump).
-- [ ] M6.3 State: `selectedNodeId` in the Atlas via `useState`; selecting highlights the node and its direct edges, dims the rest. Clear selection = Esc key or "Clear" button.
-- [ ] M6.4 Group filter chips (All / Security / Networking / Software / Labs) as toggle buttons with `aria-pressed`.
-- [ ] M6.5 Keyboard: nodes are focusable in a logical order; arrow-key navigation is *OPTIONAL*.
-- [ ] M6.6 Provide a **text-list alternative** (visually hidden or toggle "View as list") so screen-reader users get the same information.
-- [ ] M6.7 A short legend explaining levels and that "Foundation" means *learning stage*, not mastery. Honest by design.
+- [x] M6.1 `Atlas` renders the full graph from capabilities.js as SVG with clustered layout and clean hairline edges.
+- [x] M6.2 `NodeDetail` panel displays label, level badge, blurb, linked projects, and jumpable connected nodes.
+- [x] M6.3 Selection state with edge brightening, Esc clear key support, and Clear button.
+- [x] M6.4 Group filter chips with aria-pressed.
+- [x] M6.5 Focusable keyboard-accessible nodes.
+- [x] M6.6 Accessible List view toggle for screen readers and alternative viewing.
+- [x] M6.7 Transparent stage taxonomy legend (Foundation, Practicing, Demonstrated).
 
 **Done when:** every node is selectable by mouse, touch, and keyboard; the detail panel shows correct data; works at 360 px width without horizontal scroll.
 

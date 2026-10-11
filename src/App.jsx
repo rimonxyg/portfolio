@@ -3,11 +3,13 @@ import { Header } from './components/layout/Header'
 import { Hero } from './components/hero/Hero'
 import { Atlas } from './components/atlas/Atlas'
 import { About } from './components/about/About'
+import { Projects } from './components/projects/Projects'
 import { Section } from './components/layout/Section'
 import { Footer } from './components/layout/Footer'
 
 function App() {
   const [selectedNodeId, setSelectedNodeId] = useState('webapp-sec')
+  const [activeProjectId, setActiveProjectId] = useState(null)
 
   return (
     <>
@@ -23,13 +25,15 @@ function App() {
         <Atlas
           selectedNodeId={selectedNodeId}
           onSelectNode={setSelectedNodeId}
+          onOpenProject={setActiveProjectId}
         />
 
         <About />
 
-        <Section id="projects" eyebrow="Selected Work" title="Projects">
-          <p>Security tooling, educational systems, and browser extensions.</p>
-        </Section>
+        <Projects
+          activeProjectId={activeProjectId}
+          onSelectProject={setActiveProjectId}
+        />
 
         <Section id="experience" eyebrow="Professional" title="Experience & Credentials">
           <p>Internship and verified coursework.</p>

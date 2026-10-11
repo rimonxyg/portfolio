@@ -10,13 +10,13 @@
 
 ```
 Last updated:        2026-10-11
-Current milestone:   M6
-Last completed task: M5.4 (About section with avatar switcher and principles)
-Next task:           M6.1 (The Atlas: capabilities visualization & node detail)
+Current milestone:   M7
+Last completed task: M6.7 (The Atlas: interactive capabilities topology & NodeDetail panel)
+Next task:           M7.1 (Projects section & accessible drawer)
 Blocked / waiting on user: none
 Open questions for user:   Questions 1-4 answered; 5-12 as needed
 Git branch:          main
-Last commit:         946f875 feat(about): about section with dual avatar switcher and learning principles
+Last commit:         dc6c215 feat(atlas): interactive capabilities topology with filters and detail panel
 Deployed URL:        (none)
 ```
 
