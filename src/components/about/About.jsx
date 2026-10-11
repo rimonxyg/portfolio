@@ -1,12 +1,9 @@
-import { useState } from 'react'
 import { profile } from '../../data/profile'
 import { Section } from '../layout/Section'
 import { Terminal, Shield, Network, GraduationCap, Briefcase, BookOpen, Layers } from 'lucide-react'
 import styles from './About.module.css'
 
 export function About() {
-  const [avatarMode, setAvatarMode] = useState('photo') // 'photo' | 'monogram'
-
   const nowItems = [
     {
       icon: GraduationCap,
@@ -56,41 +53,14 @@ export function About() {
         <div className={styles.profileColumn}>
           <div className={styles.avatarCard}>
             <div className={styles.avatarWrapper}>
-              {avatarMode === 'photo' ? (
-                <img
-                  src={profile.avatarUrl}
-                  alt={`${profile.name} profile portrait`}
-                  className={styles.avatarPhoto}
-                  width="180"
-                  height="180"
-                  loading="lazy"
-                  onError={() => setAvatarMode('monogram')}
-                />
-              ) : (
-                <div className={styles.avatarMonogram}>
-                  <span>{profile.initials}</span>
-                </div>
-              )}
-            </div>
-
-            {/* Toggle visual mode */}
-            <div className={styles.avatarToggle}>
-              <button
-                type="button"
-                className={`${styles.toggleBtn} ${avatarMode === 'photo' ? styles.toggleActive : ''}`}
-                onClick={() => setAvatarMode('photo')}
-                aria-pressed={avatarMode === 'photo'}
-              >
-                GitHub Photo
-              </button>
-              <button
-                type="button"
-                className={`${styles.toggleBtn} ${avatarMode === 'monogram' ? styles.toggleActive : ''}`}
-                onClick={() => setAvatarMode('monogram')}
-                aria-pressed={avatarMode === 'monogram'}
-              >
-                AR Monogram
-              </button>
+              <img
+                src={profile.avatarUrl}
+                alt={`${profile.name} portrait`}
+                className={styles.avatarPhoto}
+                width="200"
+                height="260"
+                loading="eager"
+              />
             </div>
 
             <div className={styles.identityMeta}>

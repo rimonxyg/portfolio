@@ -15,7 +15,7 @@ export const profile = {
   university: 'American International University–Bangladesh (AIUB)',
   degree: 'B.Sc. in Computer Science & Engineering',
   location: 'Dhaka, Bangladesh',
-  avatarUrl: 'https://avatars.githubusercontent.com/u/219983653?v=4',
+  avatarUrl: '/rimon.png',
   initials: 'AR',
   verified: true,
 }

@@ -30,62 +30,28 @@
 }
 
 .avatarWrapper {
-  width: 140px;
-  height: 140px;
-  border-radius: var(--radius-sm);
+  width: 180px;
+  height: 220px;
+  border-radius: var(--radius-md);
   overflow: hidden;
-  border: 2px solid var(--line-bright);
+  border: 1px solid var(--line-bright);
   background: var(--surface-2);
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
 }
 
 .avatarPhoto {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top center;
+  transition: transform var(--dur-med) var(--ease);
 }
 
-.avatarMonogram {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: radial-gradient(circle at center, #1E232E 0%, #111317 100%);
-  color: var(--accent);
-  font-family: var(--font-mono);
-  font-size: 40px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  box-shadow: inset 0 0 16px var(--accent-glow);
-}
-
-.avatarToggle {
-  display: flex;
-  background: var(--surface-2);
-  border: 1px solid var(--line);
-  border-radius: var(--radius-xs);
-  padding: 2px;
-  width: 100%;
-}
-
-.toggleBtn {
-  flex: 1;
-  padding: 6px 8px;
-  font-family: var(--font-mono);
-  font-size: var(--text-xs);
-  color: var(--text-muted);
-  border-radius: var(--radius-xs);
-  transition: all var(--dur-fast) var(--ease);
-}
-
-.toggleActive {
-  background: var(--surface);
-  color: var(--accent);
-  border: 1px solid var(--line-bright);
+.avatarCard:hover .avatarPhoto {
+  transform: scale(1.03);
 }
 
 .identityMeta {

@@ -45,19 +45,13 @@
   color: var(--accent);
 }
 
-.monogram {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+.avatarThumbnail {
   width: 32px;
   height: 32px;
-  background: var(--surface-2);
-  border: 1px solid var(--line-bright);
   border-radius: var(--radius-xs);
-  font-family: var(--font-mono);
-  font-size: var(--text-xs);
-  color: var(--accent);
-  letter-spacing: 0.05em;
+  object-fit: cover;
+  object-position: top center;
+  border: 1px solid var(--line-bright);
 }
 
 .logoName {
