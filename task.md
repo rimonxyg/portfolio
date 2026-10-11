@@ -21,14 +21,14 @@ Legend: **MANDATORY** = must do · *OPTIONAL* = only if time permits and it does
 ---
 
 ## M1 — Scaffold and project hygiene
-- [ ] M1.1 Create the Vite + React (JavaScript) project (`npm create vite@latest portfolio -- --template react` or in the existing folder if the owner approved). Check the current Vite docs for the correct command.
-- [ ] M1.2 Remove demo boilerplate (default logo, counter, demo CSS).
-- [ ] M1.3 Create the folder structure from `CONTEXT.md §7`. Empty folders get a minimal file or are created when first used.
-- [ ] M1.4 `.gitignore` (node_modules, dist, .env, .DS_Store, logs). Add `.env.example` only if an env var is ever needed (it should not be).
-- [ ] M1.5 Install only: `lucide-react`, `@fontsource-variable/inter`, `@fontsource-variable/space-grotesk`, `@fontsource-variable/jetbrains-mono`. (Check these package names exist; adjust if not.) Do NOT install `motion` yet.
-- [ ] M1.6 Make sure ESLint (Vite's default) runs: `npm run lint`.
-- [ ] M1.7 Create stub docs: `README.md`, `LEARNING_NOTES.md`, `CONTENT_INVENTORY.md`.
-- [ ] M1.8 `git init` (if no repo), first commit: `chore: scaffold vite react app`.
+- [x] M1.1 Create the Vite + React (JavaScript) project (`npm create vite@latest portfolio -- --template react` or in the existing folder if the owner approved). Check the current Vite docs for the correct command.
+- [x] M1.2 Remove demo boilerplate (default logo, counter, demo CSS).
+- [x] M1.3 Create the folder structure from `CONTEXT.md §7`. Empty folders get a minimal file or are created when first used.
+- [x] M1.4 `.gitignore` (node_modules, dist, .env, .DS_Store, logs). Add `.env.example` only if an env var is ever needed (it should not be).
+- [x] M1.5 Install only: `lucide-react`, `@fontsource-variable/inter`, `@fontsource-variable/space-grotesk`, `@fontsource-variable/jetbrains-mono`. (Check these package names exist; adjust if not.) Do NOT install `motion` yet.
+- [x] M1.6 Make sure ESLint (Vite's default) runs: `npm run lint`.
+- [x] M1.7 Create stub docs: `README.md`, `LEARNING_NOTES.md`, `CONTENT_INVENTORY.md`.
+- [x] M1.8 `git init` (if no repo), first commit: `chore: scaffold vite react app`.
 
 **Done when:** `npm run dev` shows a blank page with no console errors; `npm run build` and `npm run lint` pass.
 

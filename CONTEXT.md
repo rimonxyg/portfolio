@@ -10,13 +10,13 @@
 
 ```
 Last updated:        2026-10-11
-Current milestone:   M0 completed -> starting M1
-Last completed task: M0.5
-Next task:           M1.1 (Scaffold Vite React app)
+Current milestone:   M2
+Last completed task: M1.8 (Scaffolding, project hygiene & initial commit)
+Next task:           M2.1 (Design tokens, global styles, layout shell)
 Blocked / waiting on user: none
 Open questions for user:   Questions 1-4 answered; 5-12 as needed
-Git branch:          (not initialized yet)
-Last commit:         (none)
+Git branch:          main
+Last commit:         cdd32eb chore: scaffold vite react app
 Deployed URL:        (none)
 ```
 
