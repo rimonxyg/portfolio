@@ -1,0 +1,258 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: 320px 1fr;
+    gap: var(--space-12);
+  }
+}
+
+.profileColumn {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.avatarCard {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+  text-align: center;
+}
+
+.avatarWrapper {
+  width: 140px;
+  height: 140px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 2px solid var(--line-bright);
+  background: var(--surface-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.avatarPhoto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatarMonogram {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at center, #1E232E 0%, #111317 100%);
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  box-shadow: inset 0 0 16px var(--accent-glow);
+}
+
+.avatarToggle {
+  display: flex;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xs);
+  padding: 2px;
+  width: 100%;
+}
+
+.toggleBtn {
+  flex: 1;
+  padding: 6px 8px;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  border-radius: var(--radius-xs);
+  transition: all var(--dur-fast) var(--ease);
+}
+
+.toggleActive {
+  background: var(--surface);
+  color: var(--accent);
+  border: 1px solid var(--line-bright);
+}
+
+.identityMeta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.metaName {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--text);
+}
+
+.metaDegree {
+  font-size: var(--text-xs);
+  color: var(--text-dim);
+}
+
+/* Now Card */
+.nowCard {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.nowHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--accent);
+  letter-spacing: 0.1em;
+}
+
+.nowIcon {
+  color: var(--accent);
+}
+
+.nowTitle {
+  font-weight: 600;
+}
+
+.nowList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.nowItem {
+  display: flex;
+  gap: var(--space-3);
+  font-size: var(--text-xs);
+  line-height: 1.5;
+}
+
+.itemIcon {
+  color: var(--accent);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.itemLabel {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.itemValue {
+  color: var(--text-dim);
+}
+
+/* Narrative Column */
+.narrativeColumn {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.bioText {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.leadParagraph {
+  font-size: var(--text-lg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.bodyParagraph {
+  font-size: var(--text-base);
+  color: var(--text-dim);
+  line-height: 1.7;
+}
+
+.principlesSection {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--line);
+}
+
+.principlesHeading {
+  font-size: var(--text-xl);
+  color: var(--text);
+}
+
+.principlesGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+@media (min-width: 640px) {
+  .principlesGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.principleCard {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  transition: border-color var(--dur-fast) var(--ease);
+}
+
+.principleCard:hover {
+  border-color: var(--line-bright);
+}
+
+.principleHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.principleNum {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.principleIcon {
+  color: var(--text-muted);
+}
+
+.principleTitle {
+  font-size: var(--text-sm);
+  color: var(--text);
+  font-weight: 600;
+}
+
+.principleDesc {
+  font-size: var(--text-xs);
+  color: var(--text-dim);
+  line-height: 1.5;
+}

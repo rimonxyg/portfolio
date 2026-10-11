@@ -62,14 +62,14 @@ Legend: **MANDATORY** = must do · *OPTIONAL* = only if time permits and it does
 ---
 
 ## M4 — Hero + signature interaction (the Atlas teaser)
-- [ ] M4.1 `Hero` layout: eyebrow ("AIUB · CSE"), name (large display type), headline, one-sentence statement, two buttons: **Explore the Atlas** (anchor) and **Contact** (anchor). Optional small line: *Software and Cybersecurity Intern @ SOHUB* (verified, from data) — as text, not a flashy badge.
-- [ ] M4.2 `TopologyCanvas`: an **SVG** of ~12–16 nodes and their edges drawn from `capabilities.js` (a curated subset, positioned with fixed hand-tuned coordinates for a balanced composition; do not use random placement).
-- [ ] M4.3 Edge draw-in on first load (CSS `stroke-dashoffset`, ≈1.2s, once).
-- [ ] M4.4 Pointer response: a hook `usePointer` (throttled with `requestAnimationFrame`) shifts node positions by a few px toward the pointer and brightens the nearest edges. Pause when the hero is off-screen (`IntersectionObserver` via `useInView`) or the tab is hidden.
-- [ ] M4.5 Nodes are `<button>`s (focusable). Enter/Space/click scrolls to the Atlas and preselects that node. Add `aria-label` such as "Web App Security — practicing".
-- [ ] M4.6 Mobile: no hover dependence; tap = select; reduce node count to ~8; layout stacks (text above, diagram below).
-- [ ] M4.7 `prefers-reduced-motion`: static diagram, no drift, no draw-in.
-- [ ] M4.8 Short, tasteful annotations in mono type (e.g., "L3 · routing", "app layer") — only meaningful ones.
+- [x] M4.1 `Hero` layout: eyebrow, name, headline, statement, verified SOHUB role line, buttons.
+- [x] M4.2 `TopologyCanvas`: SVG with curated nodes and edges from capabilities.js.
+- [x] M4.3 Edge draw-in on first load via CSS stroke-dashoffset animation.
+- [x] M4.4 Pointer response: usePointer hook with requestAnimationFrame, pausing when off-screen via useInView.
+- [x] M4.5 Focusable interactive nodes with accessible aria-labels and keyboard support.
+- [x] M4.6 Responsive layout and touch handling.
+- [x] M4.7 prefers-reduced-motion respected (static diagram, no drift).
+- [x] M4.8 Short meaningful annotations in mono type (L3, L7, Hypervisor, etc.).
 
 **Done when:** hero loads fast, interaction is smooth (no jank), works with keyboard and touch, reduced-motion verified, no console errors. Capture screenshots at 360 / 768 / 1440 px.
 

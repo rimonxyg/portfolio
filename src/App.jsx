@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Header } from './components/layout/Header'
 import { Hero } from './components/hero/Hero'
+import { About } from './components/about/About'
 import { Section } from './components/layout/Section'
 import { Footer } from './components/layout/Footer'
 
@@ -22,9 +23,7 @@ function App() {
           <p>A connected map of disciplines, tools, and learning projects.</p>
         </Section>
 
-        <Section id="about" eyebrow="Background" title="About">
-          <p>CSE student at AIUB exploring how systems work and how they break.</p>
-        </Section>
+        <About />
 
         <Section id="projects" eyebrow="Selected Work" title="Projects">
           <p>Security tooling, educational systems, and browser extensions.</p>

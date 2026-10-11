@@ -10,13 +10,13 @@
 
 ```
 Last updated:        2026-10-11
-Current milestone:   M4
-Last completed task: M3.8 (Data layer with verification flags & audit script)
-Next task:           M4.1 (Hero + signature interaction)
+Current milestone:   M5
+Last completed task: M4.8 (Hero + signature interactive topology canvas)
+Next task:           M5.1 (About section)
 Blocked / waiting on user: none
 Open questions for user:   Questions 1-4 answered; 5-12 as needed
 Git branch:          main
-Last commit:         9fe700c feat(data): data layer with strict verification flags and audit script
+Last commit:         0bbdf5f feat(hero): hero section and interactive topology canvas
 Deployed URL:        (none)
 ```
 
