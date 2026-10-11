@@ -59,7 +59,7 @@ export function Hero({ onSelectNode, isVisible = true }) {
                 <span className={styles.dotYellow} />
                 <span className={styles.dotGreen} />
               </div>
-              <span className={styles.cardId}>SEC_ID // AR-2026</span>
+              <span className={styles.cardId}>SEC_ID // roninxyg</span>
             </div>
 
             <div className={styles.photoContainer}>

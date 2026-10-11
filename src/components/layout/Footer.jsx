@@ -13,7 +13,7 @@ export function Footer() {
 
         <div className={styles.center}>
           <p className={styles.copyright}>
-            © {currentYear} Aktaruzzaman Rimon · Built with React & Vite
+            © {currentYear} Aktaruzzaman Rimon
           </p>
         </div>
 
