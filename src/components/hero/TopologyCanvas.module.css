@@ -1,0 +1,130 @@
+.canvasWrapper {
+  width: 100%;
+  position: relative;
+  border: 1px solid var(--line);
+  background: radial-gradient(circle at 50% 50%, #13171F 0%, #0A0B0D 100%);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 480px;
+}
+
+.gridLine {
+  stroke: var(--line);
+  stroke-dasharray: 4 6;
+  stroke-width: 1;
+}
+
+/* Edges */
+.edge {
+  stroke: var(--line-bright);
+  stroke-width: 1.2;
+  transition: stroke var(--dur-fast) var(--ease), stroke-width var(--dur-fast) var(--ease);
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  animation: drawEdge 1.2s var(--ease) forwards;
+}
+
+.edgeBright {
+  stroke: var(--accent);
+  stroke-width: 2;
+  filter: drop-shadow(0 0 4px var(--accent-glow));
+}
+
+@keyframes drawEdge {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Nodes */
+.nodeGroup {
+  cursor: pointer;
+  outline: none;
+  transition: transform var(--dur-fast) var(--ease);
+}
+
+.hitArea {
+  fill: transparent;
+}
+
+.nodeOuter {
+  fill: var(--surface);
+  stroke: var(--line-bright);
+  stroke-width: 1.5;
+  transition: all var(--dur-fast) var(--ease);
+}
+
+.nodeCore {
+  fill: var(--text-dim);
+  transition: all var(--dur-fast) var(--ease);
+}
+
+.nodeProjectOuter {
+  stroke: var(--status-inprogress);
+}
+
+.nodeProjectCore {
+  fill: var(--status-inprogress);
+}
+
+.nodeLabel {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 500;
+  fill: var(--text);
+  pointer-events: none;
+  user-select: none;
+  letter-spacing: -0.01em;
+}
+
+.nodeAnnotation {
+  font-family: var(--font-mono);
+  font-size: 8.5px;
+  fill: var(--text-muted);
+  pointer-events: none;
+  user-select: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Hover & Focus */
+.nodeHovered .nodeOuter,
+.nodeGroup:hover .nodeOuter,
+.nodeGroup:focus-visible .nodeOuter {
+  stroke: var(--accent);
+  fill: var(--surface-hover);
+  filter: drop-shadow(0 0 6px var(--accent-glow));
+}
+
+.nodeHovered .nodeCore,
+.nodeGroup:hover .nodeCore,
+.nodeGroup:focus-visible .nodeCore {
+  fill: var(--accent);
+}
+
+.nodeHovered .nodeLabel,
+.nodeGroup:hover .nodeLabel,
+.nodeGroup:focus-visible .nodeLabel {
+  fill: var(--accent);
+}
+
+.nodeGroup:focus-visible .nodeOuter {
+  stroke-width: 2.5;
+}
+
+/* Reduced Motion Override */
+.reducedMotion .edge {
+  animation: none;
+  stroke-dashoffset: 0;
+}
+
+.reducedMotion .nodeGroup {
+  transition: none;
+}

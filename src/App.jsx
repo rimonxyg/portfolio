@@ -1,8 +1,12 @@
+import { useState } from 'react'
 import { Header } from './components/layout/Header'
+import { Hero } from './components/hero/Hero'
 import { Section } from './components/layout/Section'
 import { Footer } from './components/layout/Footer'
 
 function App() {
+  const [_selectedNodeId, setSelectedNodeId] = useState('webapp-sec')
+
   return (
     <>
       <a href="#main-content" className="skip-link">
@@ -12,9 +16,7 @@ function App() {
       <Header />
 
       <main id="main-content">
-        <Section id="hero" eyebrow="AIUB · CSE" title="Aktaruzzaman Rimon">
-          <p>Cybersecurity Practitioner | Network Engineer | CSE Student</p>
-        </Section>
+        <Hero onSelectNode={setSelectedNodeId} />
 
         <Section id="atlas" eyebrow="Interactive Topology" title="The Atlas">
           <p>A connected map of disciplines, tools, and learning projects.</p>

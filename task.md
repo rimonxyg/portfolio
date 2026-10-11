@@ -48,18 +48,14 @@ Legend: **MANDATORY** = must do · *OPTIONAL* = only if time permits and it does
 ---
 
 ## M3 — Data layer (content with verification flags)
-- [ ] M3.1 `src/data/profile.js`: `{ name, altName, headline: "Cybersecurity Practitioner | Network Engineer | CSE Student", statement, university: "American International University–Bangladesh (AIUB)", location: "Bangladesh" }`. Use the name spelling the owner chose (Q1).
-  - `statement` (draft, ASK owner to approve): *"CSE student at AIUB learning how systems work — and how they break — across networks, software, and security."*
-- [ ] M3.2 `src/data/links.js`: LinkedIn, GitHub (+ Facebook/Instagram **only if the owner approved**). Each with `label`, `url`, `handle`. Email only if provided.
-- [ ] M3.3 `src/data/experience.js`: SOHUB entry `{ id, role: "Software and Cybersecurity Intern", org: "Solution Hub Technologies (SOHUB)", url: "https://sohub.com.bd/", period: "Present", verified: true, responsibilities: [] }` — **leave `responsibilities` empty**; component renders none if empty.
-- [ ] M3.4 `src/data/projects.js`: CyberSecBD, Screen Tab Locker, Personal Security Labs. Fields: `{ id, title, status: "concept"|"in-progress"|"shipped"|"learning", summary, problem, objective, approach, tools: [], contribution, outcome, links: [], verified }`. Fill **only** known facts from `CONTEXT.md §4`; unknown fields = `null` (component omits them). **Never fabricate outcome/metrics.**
-- [ ] M3.5 `src/data/capabilities.js`: nodes + edges for the Atlas.
-  - Nodes (clusters): *Security* (Web App Security, Pentest Fundamentals, Malware Cleanup, AD & Privilege Escalation, CTF, Bug Bounty), *Networking* (TCP/IP, Subnetting, Routing & Switching, Network Security, PBX/Cloud Comms interest), *Software* (React, C++, C#, Java/Swing, Automation), *Labs* (Kali, VMs, Vulnerable Targets), *Projects* (CyberSecBD, Screen Tab Locker).
-  - Each node: `{ id, label, group, level: "foundation"|"practicing"|"demonstrated", blurb, relatedProjectIds: [] }`. Default level is `foundation` or `practicing`; `demonstrated` **only** where there is evidence (ASK).
-  - Edges: `{ from, to, note }` — each edge must be a true relationship (e.g., *TCP/IP → Network Security*, *Web App Security → Kali Labs*).
-- [ ] M3.6 `src/data/credentials.js`: entries for CCNA coursework (**"Coursework", not "Certified"**), Cisco networking badge, CEH, Cisco competition finalist — all `verified: false` until the owner answers Q5–Q7. Components render only `verified: true`.
-- [ ] M3.7 `CONTENT_INVENTORY.md`: table listing every claim, its data file, `verified` status, and what is needed from the owner.
-- [ ] M3.8 Add `npm run check:content` (small Node script) that lists all unverified entries.
+- [x] M3.1 `src/data/profile.js`: verified profile data using approved name spelling.
+- [x] M3.2 `src/data/links.js`: LinkedIn, GitHub, Email, Facebook, Instagram.
+- [x] M3.3 `src/data/experience.js`: SOHUB entry with confirmed title, empty responsibilities.
+- [x] M3.4 `src/data/projects.js`: CyberSecBD, Screen Tab Locker, Personal Security Labs with accurate status labels.
+- [x] M3.5 `src/data/capabilities.js`: clusters, nodes, and truthful relationship edges.
+- [x] M3.6 `src/data/credentials.js`: coursework and credentials flagged verified: false until verified.
+- [x] M3.7 `CONTENT_INVENTORY.md`: audit table listing claim statuses.
+- [x] M3.8 Add `npm run check:content`: verified working with exact summary report.
 
 **Done when:** data files exist, `npm run check:content` prints the unverified list, and no component yet invents any content.
 
