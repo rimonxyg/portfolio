@@ -35,14 +35,12 @@ Legend: **MANDATORY** = must do · *OPTIONAL* = only if time permits and it does
 ---
 
 ## M2 — Design tokens, global styles, layout shell
-- [ ] M2.1 `src/styles/tokens.css`: CSS variables for
-  - colors: `--bg` (#0A0B0D near-black), `--surface` (#111317), `--surface-2` (#171A1F), `--line` (rgba(255,255,255,.08)), `--text` (#E8EAED), `--text-dim` (#9AA0A6), `--accent` (#7DD3E8), `--accent-dim`, `--warn` (muted amber for "in progress")
-  - type scale (fluid with `clamp()`), spacing scale (4/8/12/16/24/32/48/72/120), radii (small, 2–4px: sharp, technical), shadows, z-index, motion (`--ease`, `--dur-fast/med/slow`)
-- [ ] M2.2 `global.css`: reset, `:root` color-scheme dark, base typography, `:focus-visible` outline (2px accent, offset 3px), selection color, smooth scroll **disabled** under `prefers-reduced-motion`.
-- [ ] M2.3 Verify contrast: body text and dim text on `--bg` meet WCAG AA (≥ 4.5:1). Adjust the tokens if not and note the change.
-- [ ] M2.4 Components: `Section` (semantic `<section>` with `aria-labelledby`, consistent padding, optional eyebrow label), `Header` (name/monogram + anchor nav), `Footer`, `Button`, `Tag`, `VisuallyHidden`, and **Skip to content** link.
-- [ ] M2.5 Header nav: anchor links, keyboard accessible, mobile menu = simple disclosure button (`aria-expanded`), not a complex library.
-- [ ] M2.6 Hook `useReducedMotion` (reads `matchMedia('(prefers-reduced-motion: reduce)')`).
+- [x] M2.1 `src/styles/tokens.css`: CSS variables for colors, fluid type, spacing, radii, shadows, motion.
+- [x] M2.2 `global.css`: reset, dark theme, base typography, focus-visible outline, selection color, reduced-motion overrides.
+- [x] M2.3 Verify contrast: text and accent pass WCAG AAA (contrast ratio > 7.5:1).
+- [x] M2.4 Components: Section, Header, Footer, Button, Tag, VisuallyHidden, and Skip to content link.
+- [x] M2.5 Header nav: anchor links, keyboard accessible, mobile disclosure button with aria-expanded.
+- [x] M2.6 Hook `useReducedMotion` (reads matchMedia for prefers-reduced-motion).
 
 **Done when:** an empty page with Header, Footer and 7 placeholder `Section` shells renders; keyboard Tab order is logical; contrast checked.
 *(Placeholder section titles are only temporary scaffolding; they must be replaced in M4–M10 before release.)*

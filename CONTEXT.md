@@ -10,13 +10,13 @@
 
 ```
 Last updated:        2026-10-11
-Current milestone:   M2
-Last completed task: M1.8 (Scaffolding, project hygiene & initial commit)
-Next task:           M2.1 (Design tokens, global styles, layout shell)
+Current milestone:   M3
+Last completed task: M2.6 (Design tokens, global styles, layout shell)
+Next task:           M3.1 (Data layer with verification flags)
 Blocked / waiting on user: none
 Open questions for user:   Questions 1-4 answered; 5-12 as needed
 Git branch:          main
-Last commit:         cdd32eb chore: scaffold vite react app
+Last commit:         2bc3faa feat(layout): design tokens, global styles, and layout shell
 Deployed URL:        (none)
 ```
 
